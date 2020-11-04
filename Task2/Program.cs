@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 /*
  * Пользователь последовательно вводит целые числа.
@@ -28,16 +29,31 @@ namespace Task2
 {
     class Program
     {
-        // TODO: используйте передачу параметров по ссылке
-        ReadData()
+        static void ReadData(out double average)
         {
-            // TODO: Прочитать вводимые данные
+            string inputString = Console.ReadLine();
+            int inputNumber;
+            int sumNegative = 0;
+            int count = 0;
+            while (sumNegative >= -100 && inputString != "q")
+            {
+                inputNumber = int.Parse(inputString);
+                if (inputNumber < 0)
+                {
+                    sumNegative += inputNumber;
+                    count++;
+                }
+                inputString = Console.ReadLine();
+            }
+            average = (double)sumNegative / count;
         }
 
 
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine(/* TODO: вывести результат*/);
+            double average;
+            ReadData(out average);
+            Console.WriteLine(average);
         }
     }
 }

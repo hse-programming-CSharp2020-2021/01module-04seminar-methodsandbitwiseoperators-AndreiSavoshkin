@@ -1,0 +1,13 @@
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.csprojAssemblyReference.cache
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.AssemblyInfoInputs.cache
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.AssemblyInfo.cs
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.csproj.CoreCompileInputs.cache
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\bin\Debug\netcoreapp3.1\Task1.exe
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\bin\Debug\netcoreapp3.1\Task1.deps.json
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\bin\Debug\netcoreapp3.1\Task1.runtimeconfig.json
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\bin\Debug\netcoreapp3.1\Task1.runtimeconfig.dev.json
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\bin\Debug\netcoreapp3.1\Task1.dll
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\bin\Debug\netcoreapp3.1\Task1.pdb
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.dll
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.pdb
+D:\Программки на вижуал\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\Task1\obj\Debug\netcoreapp3.1\Task1.genruntimeconfig.cache

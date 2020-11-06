@@ -29,31 +29,37 @@ namespace Task2
 {
     class Program
     {
-        static void ReadData(out double average)
+        static void ReadData(ref double average)
         {
-            string inputString = Console.ReadLine();
+            string inputString;
             int inputNumber;
             int sumNegative = 0;
             int count = 0;
-            while (sumNegative >= -100 && inputString != "q")
+            do
             {
-                inputNumber = int.Parse(inputString);
+                inputString = Console.ReadLine();
+                if (!int.TryParse(inputString, out inputNumber))
+                {
+                    return;
+                }
                 if (inputNumber < 0)
                 {
                     sumNegative += inputNumber;
                     count++;
                 }
-                inputString = Console.ReadLine();
             }
+            while (sumNegative >= -100 && inputString != "q");
+            if (count == 0)
+                return;
             average = (double)sumNegative / count;
         }
 
 
         static void Main()
         {
-            double average;
-            ReadData(out average);
-            Console.WriteLine(average);
+            double average = 0;
+            ReadData(ref average);
+            Console.WriteLine(average.ToString("F2"));
         }
     }
 }

@@ -45,10 +45,46 @@ namespace Task3
 {
     class Program
     {
-        // TODO: самостоятельно выделите и напишите методы, использующиеся для решения задачи
+        const double delta = 0.05;
+        static void PrintFirstF(double a, double b, double c, double x)
+        {
+            Console.WriteLine((a * x * x + b * x + c).ToString("f3"));
+        }
+        static void PrintSecondF(double a, double x)
+        {
+            Console.WriteLine((a / x + Math.Sqrt(x * x + 1)).ToString("f3"));
+        }
+        static void PrintThirdF(double a, double b, double x)
+        {
+            Console.WriteLine(((a + b * x) / (Math.Sqrt(x * x + 1))).ToString("f3"));
+        }
+
+        static bool GetNumber(out double a)
+        {
+            if (!double.TryParse(Console.ReadLine(), out a))
+            {
+                Console.WriteLine("Ошибка");
+                return false;
+            }
+            return true;
+        }
 
         static void Main(string[] args)
         {
+            double a, b, c;
+            if (!(GetNumber(out a) && GetNumber(out b) && GetNumber(out c)))
+            {
+                return;
+            }
+            for (double x = 1; x.CompareTo(1.2) < 0; x += delta)
+            {
+                PrintFirstF(a, b, c, x);
+            }
+            PrintSecondF(a, 1.2);
+            for (double x = 1.2 + delta; x.CompareTo(2) <= 0; x += delta)
+            {
+                PrintThirdF(a, b, x);
+            }
         }
     }
 }

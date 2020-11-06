@@ -31,16 +31,24 @@ namespace Task4
             }
             return n;
         }
-        static bool CheckOver(int k)
+        static bool CheckStepen(int k)
         {
-            if (k >= 32)
+            if (k >= 31)
             {
                 Console.WriteLine("Переполнение");
                 return false;
             }
             return true;
         }
-        static int GetPowTwo(int k)
+        static bool CheckOverflow(long n)
+        {
+            if (n > int.MaxValue)
+            {
+                return false;
+            }
+            return true;
+        }
+        static long GetPowTwo(int k)
         {
             return 1 << k;
         }
@@ -52,11 +60,18 @@ namespace Task4
             {
                 return;
             }
-            if (CheckOver(n) && CheckOver(m))
+            if (CheckStepen(n) && CheckStepen(m))
             {
-                int numMin = n > m ? GetPowTwo(m) : GetPowTwo(n);
-                int numMax = n > m ? GetPowTwo(n - m) * numMin : GetPowTwo(m - n) * numMin;
-                Console.WriteLine(numMax + numMin);
+                long numMin = n > m ? GetPowTwo(m) : GetPowTwo(n);
+                long numMax = n > m ? GetPowTwo(n - m) * numMin : GetPowTwo(m - n) * numMin;
+                if (CheckOverflow(numMax + numMin))
+                {
+                    Console.WriteLine(numMax + numMin);
+                }
+                else
+                {
+                    Console.WriteLine("Переполнение");
+                }
             }
         }
     }

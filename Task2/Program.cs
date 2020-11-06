@@ -46,12 +46,12 @@ namespace Task2
                 {
                     sumNegative += inputNumber;
                     count++;
+                    average = (double)sumNegative / count;
                 }
             }
             while (sumNegative >= -100 && inputString != "q");
             if (count == 0)
                 return;
-            average = (double)sumNegative / count;
         }
 
 

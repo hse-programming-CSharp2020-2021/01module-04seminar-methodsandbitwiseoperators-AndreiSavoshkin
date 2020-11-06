@@ -54,7 +54,7 @@ namespace Task1
         static void Main(string[] args)
         {
             int q = 0, p = 0;
-            if (!(ReadBoundaries(out q) && ReadBoundaries(out p) && q <= p))
+            if (!(ReadBoundaries(out q)) || !(ReadBoundaries(out p) || q > p))
             {
                 Console.WriteLine("Ошибка");
                 return;

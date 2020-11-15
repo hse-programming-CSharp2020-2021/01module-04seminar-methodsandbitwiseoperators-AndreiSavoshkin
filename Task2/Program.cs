@@ -59,7 +59,14 @@ namespace Task2
         {
             double average = 0;
             ReadData(ref average);
-            Console.WriteLine(average.ToString("F2"));
+            if (average == Math.Truncate(average))
+            {
+                Console.WriteLine(average);
+            }
+            else
+            {
+                Console.WriteLine(average.ToString("F2"));
+            }
         }
     }
 }

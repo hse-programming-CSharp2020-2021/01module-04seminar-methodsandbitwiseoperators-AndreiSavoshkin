@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 /*
  * На вход подаются три числа: параметры функции a, b, c
@@ -48,22 +49,35 @@ namespace Task3
         const double delta = 0.05;
         static void PrintFirstF(double a, double b, double c, double x)
         {
-            Console.WriteLine((a * x * x + b * x + c).ToString("f3"));
+            double gospodiPomogi = a * x * x + b * x + c;
+            PrintDiff(gospodiPomogi);
         }
         static void PrintSecondF(double a, double x)
         {
-            Console.WriteLine((a / x + Math.Sqrt(x * x + 1)).ToString("f3"));
+            PrintDiff(a / x + Math.Sqrt(x * x + 1);
         }
         static void PrintThirdF(double a, double b, double x)
         {
-            Console.WriteLine(((a + b * x) / (Math.Sqrt(x * x + 1))).ToString("f3"));
+            PrintDiff((a + b * x) / Math.Sqrt(x * x + 1));
+        }
+
+        static void PrintDiff(double x)
+        {
+            if (x == Math.Truncate(x))
+            {
+                Console.WriteLine(x);
+            }
+            else
+            {
+                Console.WriteLine(x.ToString("f3"));
+            }
         }
 
         static bool GetNumber(out double a)
         {
             if (!double.TryParse(Console.ReadLine(), out a))
             {
-                Console.WriteLine("Ошибка");
+                Console.WriteLine("Ошибка", Encoding.UTF8);
                 return false;
             }
             return true;

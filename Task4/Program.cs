@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Dynamic;
+using System.Text;
 
 /*
  * Вычислить значение выражения 2^𝑁+2^𝑀, 𝑁, 𝑀 – целые неотрицательные числа вводятся пользователем с клавиатуры.
@@ -26,7 +27,7 @@ namespace Task4
             int n;
             if (!int.TryParse(Console.ReadLine(), out n) || n < 0)
             {
-                Console.WriteLine("Ошибка");
+                Console.WriteLine("Ошибка", Encoding.UTF8);
                 return -1;
             }
             return n;
@@ -35,7 +36,7 @@ namespace Task4
         {
             if (k >= 31)
             {
-                Console.WriteLine("Переполнение");
+                Console.WriteLine("Переполнение", Encoding.UTF8);
                 return false;
             }
             return true;

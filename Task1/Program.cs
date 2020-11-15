@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 /*
  * Пользователь вводит неотрицательные целые (int) числа q и p, такие, что q <= p.
@@ -56,7 +57,7 @@ namespace Task1
             int q = 0, p = 0;
             if (!(ReadBoundaries(out q)) || !(ReadBoundaries(out p) || q > p))
             {
-                Console.WriteLine("Ошибка");
+                Console.WriteLine("Ошибка", Encoding.UTF8);
                 return;
             }
             PrintPythagorasNumbers(q, p);

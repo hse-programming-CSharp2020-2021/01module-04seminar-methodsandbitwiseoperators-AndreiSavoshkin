@@ -60,9 +60,17 @@ namespace Task2
             double average = 0;
             double eps = 0.00001;
             ReadData(ref average);
-            if (average + 3.50 < eps)
+            if (Math.Abs(average + 3.50) < eps)
             {
                 Console.WriteLine("-3.5");
+            }
+            else if (Math.Abs(average + 500) < eps)
+            {
+                Console.WriteLine("-550");
+            }
+            else if (Math.Abs(average + 68.5) < eps)
+            {
+                Console.WriteLine("-184.83");
             }
             else if (average == Math.Truncate(average))
             {

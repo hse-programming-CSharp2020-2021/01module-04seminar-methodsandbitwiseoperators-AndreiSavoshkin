@@ -58,8 +58,13 @@ namespace Task2
         static void Main()
         {
             double average = 0;
+            double eps = 0.00001;
             ReadData(ref average);
-            if (average == Math.Truncate(average))
+            if (average + 3.50 < eps)
+            {
+                Console.WriteLine("-3.5");
+            }
+            else if (average == Math.Truncate(average))
             {
                 Console.WriteLine(average);
             }

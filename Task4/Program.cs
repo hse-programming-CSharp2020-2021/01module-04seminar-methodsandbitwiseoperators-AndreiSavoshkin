@@ -27,6 +27,7 @@ namespace Task4
             int n;
             if (!int.TryParse(Console.ReadLine(), out n) || n < 0)
             {
+                Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.WriteLine("Ошибка", Encoding.UTF8);
                 return -1;
             }
@@ -36,6 +37,7 @@ namespace Task4
         {
             if (k >= 31)
             {
+                Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.WriteLine("Переполнение", Encoding.UTF8);
                 return false;
             }

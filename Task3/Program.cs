@@ -54,7 +54,7 @@ namespace Task3
         }
         static void PrintSecondF(double a, double x)
         {
-            PrintDiff(a / x + Math.Sqrt(x * x + 1);
+            PrintDiff(a / x + Math.Sqrt(x * x + 1));
         }
         static void PrintThirdF(double a, double b, double x)
         {
@@ -77,6 +77,7 @@ namespace Task3
         {
             if (!double.TryParse(Console.ReadLine(), out a))
             {
+                Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.WriteLine("Ошибка", Encoding.UTF8);
                 return false;
             }

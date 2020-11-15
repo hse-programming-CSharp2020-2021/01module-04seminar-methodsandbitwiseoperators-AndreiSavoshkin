@@ -57,6 +57,7 @@ namespace Task1
             int q = 0, p = 0;
             if (!(ReadBoundaries(out q)) || !(ReadBoundaries(out p) || q > p))
             {
+                Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.WriteLine("Ошибка", Encoding.UTF8);
                 return;
             }

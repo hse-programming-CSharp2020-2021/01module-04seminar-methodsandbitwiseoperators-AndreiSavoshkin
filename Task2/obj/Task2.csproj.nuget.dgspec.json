@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anastasia\\source\\repos\\01m04s_Methods\\Task2\\Task2.csproj": {}
+    "D:\\Программки на вижуал\\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\\Task2\\Task2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anastasia\\source\\repos\\01m04s_Methods\\Task2\\Task2.csproj": {
+    "D:\\Программки на вижуал\\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\\Task2\\Task2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anastasia\\source\\repos\\01m04s_Methods\\Task2\\Task2.csproj",
+        "projectUniqueName": "D:\\Программки на вижуал\\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\\Task2\\Task2.csproj",
         "projectName": "Task2",
-        "projectPath": "C:\\Users\\Anastasia\\source\\repos\\01m04s_Methods\\Task2\\Task2.csproj",
-        "packagesPath": "C:\\Users\\Anastasia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anastasia\\source\\repos\\01m04s_Methods\\Task2\\obj\\",
+        "projectPath": "D:\\Программки на вижуал\\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\\Task2\\Task2.csproj",
+        "packagesPath": "C:\\Users\\savoc\\.nuget\\packages\\",
+        "outputPath": "D:\\Программки на вижуал\\01module-04seminar-methodsandbitwiseoperators-AndreiSavoshkin\\Task2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anastasia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\savoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -52,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
